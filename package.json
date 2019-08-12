@@ -1,23 +1,17 @@
 {
-  "name": "WeatherApp",
+  "name": "Web-server",
   "version": "1.0.0",
-  "description": "* A weather app using Node.js",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Warren-Wei/WeatherApp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Warren-Wei/WeatherApp/issues"
-  },
-  "homepage": "https://github.com/Warren-Wei/WeatherApp#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
     "request": "^2.88.0"
   }
 }
