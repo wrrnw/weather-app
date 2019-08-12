@@ -11,7 +11,11 @@ const forecast = (lat, lon, callback) => {
             callback("Invalid location. Please enter another one", undefined);
         } else {
             callback(undefined, 
-                `${body.daily.data[0].summary} It is currently ${body.currently.temperature} out there and there is a ${Math.floor(body.currently.precipProbability/100)}% chance of rain.`   
+                `${body.daily.data[0].summary} It is currently ${body.currently.temperature} 
+                out there while the apparent temperature is ${body.currently.apparentTemperature} 
+                and there is a ${Math.floor(body.currently.precipProbability/100)}% chance of rain.
+                The highest temperature today is ${body.daily.data[0].temperatureHigh} and the lowest 
+                temperature today is ${body.daily.data[0].temperatureLow}. Have a good day!`   
             );
         }
     });
